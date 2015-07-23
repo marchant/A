@@ -9,12 +9,23 @@
             "properties": {
                 "element": {"#": "owner"}
             }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@owner.data"}
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="owner" class="MyComponent">
+        <p data-montage-id="text"></p>
     </div>
 </body>
 </html>
