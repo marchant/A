@@ -12,5 +12,8 @@ exports.MyComponent = Component.specialize(/** @lends MyComponent# */ {
         value: function MyComponent() {
             this.super();
         }
+    },
+    data: {
+        value: null
     }
 });
