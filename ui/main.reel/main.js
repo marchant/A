@@ -19,6 +19,6 @@ exports.Main = Component.specialize(/** @lends Main# */ {
         }
     },
     data: {
-        value: ["a","b","c"]
+        value: null
     }
 });
