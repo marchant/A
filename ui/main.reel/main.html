@@ -30,17 +30,51 @@
             "bindings": {
                 "content": {"<-": "@owner.data"}
             }
+        },
+        "slider": {
+            "prototype": "digit/ui/slider.reel",
+            "properties": {
+                "element": {"#": "slider"},
+                "axis": "horizontal",
+                "max": 100,
+                "min": 0,
+                "value": 50
+            },
+            "bindings": {
+                "value": {"<->": "@textField.value"}
+            }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            },
+            "bindings": {
+                "value": {"<-": "@repetition:iteration.object"}
+            }
+        },
+        "textField": {
+            "prototype": "digit/ui/text-field.reel",
+            "properties": {
+                "element": {"#": "textField"},
+                "placeholderValue": "Text"
+            }
         }
     }
     </script>
 </head>
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
+        <input data-montage-id="textField" type="text">
+        <div data-montage-id="slider"></div>
+        <p></p>
         <ul data-montage-id="repetition">
             <li data-montage-id="myComponent1">
-
+                <p data-montage-id="text" data-arg="text"></p>
             </li>
         </ul>
+        <div data-montage-id="myComponent"></div>
     </div>
 </body>
 </html>
