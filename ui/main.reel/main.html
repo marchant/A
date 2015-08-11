@@ -30,6 +30,13 @@
             "bindings": {
                 "content": {"<-": "@owner.data"}
             }
+        },
+        "text": {
+            "prototype": "montage/ui/text.reel",
+            "properties": {
+                "element": {"#": "text"},
+                "value": "Text"
+            }
         }
     }
     </script>
@@ -37,7 +44,9 @@
 <body>
     <div data-montage-id="main" data-montage-skin="light" class="Main">
         <ul data-montage-id="repetition">
-            <li data-montage-id="myComponent1"></li>
+            <li data-montage-id="myComponent1">
+                <p data-montage-id="text" data-arg="aa"></p>
+            </li>
         </ul>
     </div>
 </body>

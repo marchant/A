@@ -14,9 +14,13 @@
     "prototype": "montage/core/meta/module-blueprint",
     "properties": {
       "name": null,
+      "blueprintModule": {
+        "%": "ui/main.reel/main.meta"
+      },
       "parent": {"@": "blueprint_component_reference"},
       "propertyBlueprintGroups": {
-        "Main": []
+        "Main": [],
+        "MyComponent": []
       },
       "module": {
         "%": "ui/main.reel"
